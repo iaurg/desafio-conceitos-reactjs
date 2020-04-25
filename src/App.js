@@ -13,7 +13,7 @@ function App () {
 
   async function handleAddRepository () {
     const response = await api.post('repositories', {
-      title: 'New repo'
+      title: 'Desafio ReactJS'
     })
     const repository = response.data
     setRepositories([...repositories, repository])
@@ -32,7 +32,7 @@ function App () {
       <ul data-testid='repository-list'>
         {repositories.map(repository => (
           <li key={repository.id}>
-            {repository.title} - {repository.id.split('', 5)}
+            {repository.title}
             <button onClick={() => handleRemoveRepository(repository.id)}>
               Remover
             </button>
