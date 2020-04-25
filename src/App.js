@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react'
 
-import "./styles.css";
+import './styles.css'
 
-function App() {
-  async function handleAddRepository() {
+function App () {
+  async function handleAddRepository () {
     // TODO
   }
 
-  async function handleRemoveRepository(id) {
+  async function handleRemoveRepository (id) {
     // TODO
   }
 
   return (
     <div>
-      <ul data-testid="repository-list">
+      <ul data-testid='repository-list'>
         <li>
           Repositório 1
 
@@ -25,7 +25,7 @@ function App() {
 
       <button onClick={handleAddRepository}>Adicionar</button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
